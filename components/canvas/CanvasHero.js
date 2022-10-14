@@ -1,9 +1,7 @@
-import { Suspense } from 'react'
-import { Canvas, useLoader  } from '@react-three/fiber'
+import { Canvas  } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
-import img from '../../public/logo.svg'
+import Model from '../../public/Model'
 
 const CanvasHero = () => {
 return (
@@ -22,10 +20,7 @@ return (
 
         <OrbitControls autoRotate autoRotateSpeed={-0.25} />
 
-        <mesh>
-            <planeBufferGeometry attach="geometry" args={[2, 2]} />
-            <meshPhongMaterial attach="material" color="green" />
-        </mesh>
+        <Model/>
 
     </Canvas>
 </div>
