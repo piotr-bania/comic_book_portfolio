@@ -1,0 +1,68 @@
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/ocq0abi.css");
+
+/* ------------------------------ Variables ------------------------------ */
+$white: #FFFFFF;
+$black: #000000;
+$purple: #7161F5;
+$green: #61F570;
+$red: #F57061;
+$yellow: #E6F561;
+$blue: #61B5F5;
+
+
+/* ------------------------------ Base ------------------------------ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* ------------------------------ Fonts ------------------------------ */
+h1,
+h2,
+h3,
+h4 {
+    font-family: marvin, sans-serif;
+    color: $black;
+    margin: 0;
+}
+
+/* ------------------------------ Navbar ------------------------------ */
+header {
+    position: fixed;
+    top: 40px;
+    left: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .logo {
+        cursor: pointer;
+    }
+}
+
+/* ------------------------------ Hero ------------------------------ */
+#hero {
+    h1 {
+        margin-left: 140px;
+        margin-top: 180px;
+    }
+}
+
+/* ------------------------------ Hero ------------------------------ */
+.canvasHero {
+    z-index: -1;
+    border: 1px solid pink;
+}

@@ -1,1 +1,55 @@
-/*# sourceMappingURL=globals.css.map */
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/ocq0abi.css");
+/* ------------------------------ Variables ------------------------------ */
+/* ------------------------------ Base ------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: auto;
+  overflow-x: hidden;
+}
+
+/* ------------------------------ Fonts ------------------------------ */
+h1,
+h2,
+h3,
+h4 {
+  font-family: marvin, sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+/* ------------------------------ Navbar ------------------------------ */
+header {
+  position: fixed;
+  top: 40px;
+  left: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+header .logo {
+  cursor: pointer;
+}
+
+/* ------------------------------ Hero ------------------------------ */
+#hero h1 {
+  margin-left: 140px;
+  margin-top: 180px;
+}
+
+/* ------------------------------ Hero ------------------------------ */
+.canvasHero {
+  z-index: -1;
+  border: 1px solid pink;
+}/*# sourceMappingURL=globals.css.map */
