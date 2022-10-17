@@ -1,7 +1,6 @@
-import { Canvas  } from '@react-three/fiber'
-import { useFrame, OrbitControls } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 
-import Model from '../../public/models/Model'
 import Creative from '../../public/models/Creative'
 
 const CanvasHero = () => {
@@ -15,11 +14,12 @@ return (
                 width: "100vw",
                 height: "100vh"
                 }}>
-            <ambientLight color="#FFFFFF" intensity={1} />
-            <pointLight color="#D0D0D1" intensity={1} position={[-2, 0, 2]} />
-            <directionalLight color="#697077" intensity={1} position={[-2, 0, 2]} />
+            <ambientLight color="#FFFFFF" intensity={0.5} />
+            <pointLight color="#D0D0D1" intensity={0.5} position={[-2, 0, 2]} />
+            <directionalLight color="#697077" intensity={0.5} position={[-2, 0, 2]} />
 
             <OrbitControls autoRotate autoRotateSpeed={-1} />
+            {/* <OrbitControls /> */}
 
             <Creative />
 
