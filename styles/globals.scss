@@ -1,8 +1,9 @@
-/* ------------------------------ Fonts import ------------------------------ */
+// /* ------------------------------ Fonts import ------------------------------ */
 @import url("https://use.typekit.net/ocq0abi.css");
 
 /* ------------------------------ Variables ------------------------------ */
 $white: #FFFFFF;
+$off-white: #F5F4FE;
 $black: #000000;
 $purple: #7161F5;
 $green: #61F570;
@@ -24,6 +25,7 @@ html {
 
 body {
     margin: auto;
+    background-color: $off-white;
     overflow-x: hidden;
 }
 
@@ -47,22 +49,41 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    z-index: 100;
 
     .logo {
         cursor: pointer;
     }
 }
 
-/* ------------------------------ Hero ------------------------------ */
-#hero {
+/* ------------------------------ Section 1 ------------------------------ */
+#section-1 {
+    background-image: url(/background/frame.svg), url(/background/background.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
     h1 {
         margin-left: 140px;
         margin-top: 180px;
+        width: 50%;
     }
 }
 
-/* ------------------------------ Hero ------------------------------ */
+/* ------------------------------ Section 1 ------------------------------ */
+#section-2 {
+    position: relative;
+    top: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ------------------------------ Canvas ------------------------------ */
 .canvasHero {
-    z-index: -1;
-    border: 1px solid pink;
+    z-index: 0;
 }

@@ -11,18 +11,18 @@ export default function Creative({ ...props }) {
   const { nodes, materials } = useGLTF('/models/creative.gltf')
   
   useFrame(({ clock }) => {
-    group.current.rotation.z = Math.sin(clock.getElapsedTime() * 2) * 0.025
+    group.current.rotation.z = Math.sin(clock.getElapsedTime() * 1) * 0.025
   })
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.frame_outline.geometry} material={materials.black} rotation={[Math.PI / 2, 0.5, 0]} scale={15.92} />
-      <mesh geometry={nodes.frame.geometry} material={materials.yellow} rotation={[Math.PI / 2, 0.5, 0]} scale={15.92} />
-      <group rotation={[Math.PI / 2, 0.5, 0]} scale={15.92}>
+      <mesh geometry={nodes.frame_outline.geometry} material={materials.black} rotation={[Math.PI / 2, 0.25, 0]} scale={15.92} />
+      <mesh geometry={nodes.frame.geometry} material={materials.yellow} rotation={[Math.PI / 2, 0.25, 0]} scale={15.92} />
+      <group rotation={[Math.PI / 2, 0.25, 0]} scale={15.92}>
         <mesh geometry={nodes.Curve048.geometry} material={materials.black} />
         <mesh geometry={nodes.Curve048_1.geometry} material={materials.black} />
       </group>
-      <mesh geometry={nodes.text.geometry} material={materials.white} rotation={[Math.PI / 2, 0.5, 0]} scale={15.92} />
+      <mesh geometry={nodes.text.geometry} material={materials.white} rotation={[Math.PI / 2, 0.25, 0]} scale={15.92} />
     </group>
   )
 }

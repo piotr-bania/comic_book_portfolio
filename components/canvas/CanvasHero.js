@@ -25,16 +25,12 @@ const CanvasHero = () => {
                     far: 1000,
                     position: [0, 0, 15]
                 }}>
-                
-                <ambientLight color="#FFFFFF" intensity={0.5} />
-                <pointLight color="#D0D0D1" intensity={0.5} position={[-2, 0, 2]} />
-                <directionalLight color="#697077" intensity={0.5} position={[-2, 0, 2]} />
 
-                {/* <OrbitControls autoRotate autoRotateSpeed={-1} /> */}
-                <OrbitControls />
+                <ambientLight color="#FFFFFF" intensity={1} />
 
-                <Creative />
-
+                <Creative position={[-3, 1, 0]}/>
+                <Creative position={[0, 0, 2]}/>
+                <Creative position={[2, -1, 4]}/>
             </Canvas>
         </div>
     )

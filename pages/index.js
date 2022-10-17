@@ -18,9 +18,18 @@ export default function Home() {
     <CanvasHero/>
 
       {/* ---------------------- Hero ---------------------- */}
-      <section id='hero'>
+      <section id='section-1'>
         <div>
-          <h1>This is a dummy text.</h1>
+          <h1>This is a dummy text.</h1><br />
+          <h1>This is a dummy text.</h1><br />
+          <h1>This is a dummy text.</h1><br />
+        </div>
+      </section>
+
+      <section id='section-2'>
+      <div>
+          <h1>This is a dummy text.</h1><br />
+          <h1>This is a dummy text.</h1><br />
         </div>
       </section>
 
